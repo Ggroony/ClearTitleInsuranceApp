@@ -1,0 +1,32 @@
+The following application will recieve input from the user including:
+
+*County 
+*Loan Amount
+*Purchase Amount/Sales Price
+
+Then the application will output the estimated amount that the title insurance will be,
+including tax and endorsements (always including 8.1 and 9 endorsements)
+
+Pretty simple. I will need to grab the county tax info for each county to feed into the system, and the rates that
+either old republic charges or FNF. 
+
+I'm going to use PyWebIo framework to create a webbased application without having to mess with HTML and CSS
+
+
+7/7 - using pywebio, I am not needing to edit much html and css, which is perfect. 
+
+Needs: Come up with a function to correctly validate data in my forms (Check form function), Need to gather the output mathmatical data to create an output, come up with a way for the user to select
+whether this will be a cash deal or not, removing the loan amount option. 
+
+To be able to inform us when someone uses the application
+
+Solved issue 7/7 - was having a really hard time figuring out how to reference the input funcitons in my outputs or even how to reference vairables within a function to the validate call, but discovered
+that if I set up the variable as global first, it will be accesible. 
+
+7/13 - I've organized the site a bit more to grab the information needed. Now I need to get the insurance rates from TW or OR - I'm thinking we'll just skip doing the municipality calculations since they can be so different
+or providing a general tax rate with a disclaimer. The issue I'm running into now is converting the input to an integer or float so that I can mulitply it. I'll figure it out. 
+
+OR Rate - Owners Basic Cash .003875
+
+OR Rate - Lenders Simulateos LOAN - .00315
+OR Rate - Owners - always $200
